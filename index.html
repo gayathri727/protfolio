@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Gayathri C | Data Analyst</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+<style>
+:root{--bg:#F6F8FA;--card:#FFFFFF;--ink:#0F2A43;--mute:#51647A;--line:#DCE3EB;--acc:#0B7A85;--accbg:#E3F3F4;--onacc:#FFFFFF;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0C1824;--card:#13243A;--ink:#EAF1F8;--mute:#9DB0C5;--line:#243B55;--acc:#4FC3CE;--accbg:#12384A;--onacc:#0C1824}}
+:root[data-theme="dark"]{--bg:#0C1824;--card:#13243A;--ink:#EAF1F8;--mute:#9DB0C5;--line:#243B55;--acc:#4FC3CE;--accbg:#12384A;--onacc:#0C1824}
+html{scroll-padding-top:80px;scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 "Plus Jakarta Sans",system-ui,sans-serif}
+h1,h2,h3,p{margin:0}
+a{color:inherit}
+a:focus-visible{outline:3px solid var(--acc);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 22px}
+.i{width:20px;height:20px;flex:none}
+header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--card);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:16px;height:64px}
+.logo{font-weight:800;text-decoration:none;font-size:1.1rem}
+.bar nav{display:flex;gap:22px;align-items:center}
+.bar nav a{text-decoration:none;color:var(--mute);font-weight:500;font-size:.95rem}
+.bar nav a:hover{color:var(--ink)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:11px 20px;border-radius:8px;font-weight:600;text-decoration:none;border:1.5px solid var(--acc);color:var(--acc)}
+.btn.main{background:var(--acc);color:var(--onacc)}
+.hero{display:grid;grid-template-columns:1.4fr 1fr;gap:44px;align-items:center;padding:64px 0 56px}
+.badge{display:inline-flex;align-items:center;gap:8px;padding:5px 14px;border-radius:99px;background:var(--accbg);color:var(--acc);font-weight:600;font-size:.88rem;margin-bottom:18px}
+.badge b{width:8px;height:8px;border-radius:50%;background:#2BB673}
+.hero h1{font-size:clamp(2.1rem,5vw,3.2rem);font-weight:800;line-height:1.15;letter-spacing:-.02em}
+.hero p.lead{color:var(--mute);margin:18px 0 26px;max-width:52ch;font-size:1.05rem}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.social{display:flex;gap:10px;margin-top:22px}
+.social a{width:42px;height:42px;display:grid;place-items:center;border:1px solid var(--line);border-radius:50%;background:var(--card);color:var(--mute)}
+.social a:hover{color:var(--acc);border-color:var(--acc)}
+.profile{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:26px}
+.avatar{width:84px;height:84px;border-radius:50%;background:var(--acc);color:var(--onacc);display:grid;place-items:center;font-size:1.9rem;font-weight:800;margin-bottom:16px}
+.profile h2{font-size:1.3rem}
+.profile .role{color:var(--mute);font-size:.95rem;margin-bottom:16px}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;border-top:1px solid var(--line);padding-top:16px}
+.facts div{text-align:center}
+.facts strong{display:block;font-size:1.6rem;color:var(--acc);line-height:1.2}
+.facts span{font-size:.8rem;color:var(--mute)}
+.loc{display:flex;align-items:center;gap:8px;color:var(--mute);font-size:.92rem;margin-top:16px}
+section{padding:56px 0;border-top:1px solid var(--line)}
+section h2.t{font-size:1.7rem;font-weight:800;margin-bottom:28px;letter-spacing:-.01em}
+.timeline{border-left:2px solid var(--line);margin-left:6px}
+.job{position:relative;padding:0 0 30px 26px}
+.job:last-child{padding-bottom:0}
+.job::before{content:"";position:absolute;left:-7px;top:6px;width:12px;height:12px;border-radius:50%;background:var(--acc);border:2px solid var(--bg)}
+.job h3{font-size:1.1rem}
+.job .meta{color:var(--acc);font-weight:600;font-size:.9rem;margin:2px 0 8px}
+ul.pts{margin:0;padding-left:18px;color:var(--mute)}
+ul.pts li{margin:4px 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:20px}
+.proj{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:24px}
+.proj h3{font-size:1.15rem;margin-bottom:10px}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px}
+.tags span,.chips span{font-size:.82rem;font-weight:500;padding:4px 12px;border-radius:99px;background:var(--accbg);color:var(--acc)}
+.sk{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+.sk .proj h3{font-size:1rem;margin-bottom:12px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.cert{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.cert div{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px 18px}
+.cert strong{display:block;font-size:.97rem}
+.cert span{color:var(--mute);font-size:.88rem}
+.edu{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:22px;margin-bottom:28px}
+.edu p{color:var(--mute)}
+.contact{background:var(--ink);color:var(--bg);border-radius:16px;padding:40px 30px;text-align:center}
+.contact h2{font-size:1.8rem;margin-bottom:10px}
+.contact p{opacity:.8;margin-bottom:22px}
+.clist{display:flex;flex-wrap:wrap;gap:12px 26px;justify-content:center;margin:0;padding:0;list-style:none}
+.clist a,.clist span{display:inline-flex;align-items:center;gap:10px;text-decoration:none;font-weight:500}
+.clist a:hover{text-decoration:underline}
+footer{padding:26px 0 40px;text-align:center;color:var(--mute);font-size:.88rem}
+@media (max-width:800px){.hero{grid-template-columns:1fr;padding-top:40px}.bar nav a:not(.btn){display:none}}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap bar">
+<a class="logo" href="#">Gayathri C</a>
+<nav aria-label="Main"><a href="#experience">Internships</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#education">Education</a><a class="btn main" href="#contact">Contact</a></nav>
+</div></header>
+
+<main class="wrap">
+<div class="hero">
+<div>
+<span class="badge"><b></b>Open to work: Data Analyst, AI, Machine Learning</span>
+<h1>Gayathri C</h1>
+<p class="lead">Hi, I'm Gayathri, a B.Tech graduate in Artificial Intelligence and Data Science. I'm interested in AI, machine learning, and data analysis, and I enjoy learning new things and exploring how technology can be used in real-life applications. Through my projects and internships, I've gained practical experience and learned more about these fields. I'm currently open to job opportunities where I can apply my skills and continue learning.</p>
+<div class="btns"><a class="btn main" href="mailto:gayathri36304@gmail.com"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>Email me</a><a class="btn" href="#projects">View projects</a></div>
+<div class="social">
+<a href="https://linkedin.com/in/gayathri-c-" aria-label="LinkedIn"><svg class="i" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.5h4V21H3zM9.5 9.5h3.8v1.6h.1c.5-1 1.8-2 3.8-2 4 0 4.8 2.6 4.8 6V21h-4v-5.1c0-1.2 0-2.8-1.7-2.8s-2 1.3-2 2.7V21h-4z"/></svg></a>
+<a href="https://github.com/gayathri727" aria-label="GitHub"><svg class="i" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.34-1.28-1.7-1.28-1.7-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5z"/></svg></a>
+</div>
+</div>
+<aside class="profile">
+<div class="avatar" aria-hidden="true">GC</div>
+<h2>Gayathri C</h2>
+<p class="role">Data Analyst</p>
+<div class="facts"><div><strong>3</strong><span>Internships</span></div><div><strong>3</strong><span>Projects</span></div><div><strong>4</strong><span>Certifications</span></div></div>
+<p class="loc"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.2 7-11a7 7 0 0 0-14 0c0 4.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Coimbatore, Tamil Nadu</p>
+</aside>
+</div>
+
+<section id="experience">
+<h2 class="t">Internship experience</h2>
+<div class="timeline">
+<div class="job"><h3>AI Research Intern</h3><p class="meta">IMAI Technologies, Coimbatore | Jul 2025</p><ul class="pts"><li>Built a Python and OpenCV project for real-time vehicle detection on video data.</li><li>Trained and tested models on sample datasets, and reviewed results to find misclassification patterns.</li></ul></div>
+<div class="job"><h3>GenAI Intern</h3><p class="meta">Skillible, Remote | Aug 2024</p><ul class="pts"><li>Used prompt engineering to generate text and image content from given requirements.</li><li>Automated report creation with GenAI tools, reducing manual effort.</li></ul></div>
+<div class="job"><h3>Full Stack Developer Intern</h3><p class="meta">Webgen, Remote | Jul 2024</p><ul class="pts"><li>Built a responsive web application with HTML, CSS, JavaScript, and back-end logic.</li><li>Worked with the team on requirements and delivered within the project timeline.</li></ul></div>
+</div>
+</section>
+
+<section id="projects">
+<h2 class="t">Projects</h2>
+<div class="grid">
+<article class="proj"><h3>Vehicle Identification System</h3><div class="tags"><span>Python</span><span>Computer vision</span></div><ul class="pts"><li>Built a model that classifies different vehicle types from image datasets.</li><li>Tested results and identified areas to improve classification accuracy.</li></ul></article>
+<article class="proj"><h3>WellGenix: Healthcare Assistant</h3><div class="tags"><span>Web app</span><span>Health data</span></div><ul class="pts"><li>Developed an app that generates personalized diet plans from user inputs and tracks progress.</li><li>Created visual workflows to organize user information and app processes.</li></ul></article>
+<article class="proj"><h3>PhobiaPulse: VR Phobia Diagnostic</h3><div class="tags"><span>AI</span><span>Biometric data</span><span>VR</span></div><ul class="pts"><li>Designed a system that processes heart-rate and biometric data to find patterns linked to phobia triggers.</li><li>Defined requirements and workflow for an AI-powered VR diagnostic system.</li></ul></article>
+</div>
+</section>
+
+<section id="skills">
+<h2 class="t">Skills</h2>
+<div class="sk">
+<div class="proj"><h3>Data and analysis</h3><div class="chips"><span>SQL</span><span>Python</span><span>Excel</span><span>Power BI</span><span>Tableau</span></div></div>
+<div class="proj"><h3>AI and web</h3><div class="chips"><span>GenAI</span><span>OpenCV</span><span>React.js</span><span>HTML</span><span>CSS</span><span>JavaScript</span></div></div>
+<div class="proj"><h3>Tools</h3><div class="chips"><span>GitHub</span><span>VS Code</span></div></div>
+<div class="proj"><h3>Areas of interest</h3><div class="chips"><span>Data visualization</span><span>ETL</span><span>Data warehousing</span><span>Machine learning</span></div></div>
+</div>
+</section>
+
+<section id="education">
+<h2 class="t">Education and certifications</h2>
+<div class="edu"><h3>B.Tech, Artificial Intelligence and Data Science</h3><p>SNS College of Engineering, Coimbatore | 2022 to 2026</p></div>
+<div class="cert">
+<div><strong>Enterprise Design Thinking</strong><span>IBM</span></div>
+<div><strong>Developer and Tech Job Simulation</strong><span>Accenture</span></div>
+<div><strong>Python Programming</strong><span>PrepInsta</span></div>
+<div><strong>Introduction to Industry 4.0 and Industrial IoT</strong><span>NPTEL</span></div>
+</div>
+</section>
+
+<section id="contact" style="border-top:0">
+<div class="contact">
+<h2>Let's connect</h2>
+<p>I am open to data analyst, AI, and machine learning roles.</p>
+<ul class="clist">
+<li><a href="mailto:gayathri36304@gmail.com"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>gayathri36304@gmail.com</a></li>
+<li><a href="https://linkedin.com/in/gayathri-c-"><svg class="i" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.5h4V21H3zM9.5 9.5h3.8v1.6h.1c.5-1 1.8-2 3.8-2 4 0 4.8 2.6 4.8 6V21h-4v-5.1c0-1.2 0-2.8-1.7-2.8s-2 1.3-2 2.7V21h-4z"/></svg>LinkedIn</a></li>
+<li><a href="https://github.com/gayathri727"><svg class="i" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.34-1.28-1.7-1.28-1.7-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5z"/></svg>GitHub</a></li>
+</ul>
+</div>
+</section>
+</main>
+<footer>Gayathri C | Coimbatore, Tamil Nadu</footer>
+</body>
+</html>
